@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layouts</title>
+    <style>
+        .big-box{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /*justify-content: center;*/
+        }
+        .box{
+            padding:5px;
+            width:50%;
+            height:100px;
+            box-sizing: border-box;
+            /*border: 1px solid red*/
+        }
+        .box0{
+            background-color: red;
+
+        }
+        @media(min-width: 480px){
+
+
+            .big-box{
+                flex-direction:unset;
+            }
+            .box0{
+                width:100%;
+
+            }
+        }
+
+        .box1{
+            background-color: purple;
+
+        }
+
+        .box2{
+            background-color: orange;
+
+        }
+
+
+        .box3{
+            background-color: yellow;
+
+        }
+
+        .box4{
+            background-color: royalblue;
+
+        }
+
+        .box5{
+            background-color: bisque;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="big-box">
+    <div class="box  box0">
+        0
+    </div>
+    <div class="box  box1">
+        1
+    </div>
+    <div class="box  box2">
+        2
+    </div>
+    <div class="box  box3">
+        3
+    </div>
+    <div class="box  box4">
+        4
+    </div>
+    <div class="box  box5">
+        5
+    </div>
+</div>
+
+</body>
+</html>

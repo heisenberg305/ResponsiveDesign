@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostly Fluid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        /*.big-box div{*/
+            /*height: 150px;*/
+            /*width:100%;*/
+        /*}*/
+
+
+        .big-box{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /*flex-direction: column;*/
+        }
+
+        .box1{
+            background-color: purple;
+
+        }
+
+        .box2{
+            background-color: orange;
+
+        }
+
+
+        .box3{
+            background-color: yellow;
+
+        }
+
+        .box4{
+            background-color: royalblue;
+
+        }
+
+        .box5{
+            background-color: bisque;
+
+        }
+
+        .box1,.box2,.box3,.box4,.box5{
+            height:150px;
+            width:100%
+        }
+
+        @media (min-width: 700px) and (max-width:900px){
+            .box1{
+                width:100%;
+            }
+
+            .box2,.box3,.box4,.box5 {
+                width: 50%;
+            }
+
+        }
+
+        @media (min-width:900px){
+            .box1{
+                width:60%;
+            }
+            .box2{
+                width:40%;
+            }
+            .box3,.box4,.box5 {
+                width: 33.33%;
+            }
+
+
+        }
+
+        @media (min-width: 900px) {
+            .big-box {
+                width:800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="big-box">
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+    <div class="box4">
+    </div>
+    <div class="box5">
+    </div>
+
+</div>
+
+</body>
+</html>
